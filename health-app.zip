@@ -1,0 +1,95 @@
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPro App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HealthPro App</h1>
+
+        <!-- Virtual Doctor -->
+        <section>
+            <h2>Virtual Doctor</h2>
+            <p>Connect with a doctor online.</p>
+            <a href="https://www.teladoc.com/" target="_blank" class="btn">Book a Consultation</a>
+        </section>
+
+        <!-- Health Podcasts -->
+        <section>
+            <h2>Health Podcasts</h2>
+            <p>Listen to expert advice.</p>
+            <iframe src="https://open.spotify.com/embed/show/5z4i3jGUPQ7p0oSth3jJXe" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </section>
+
+        <!-- Disease/Food/Medication/Diet Tracking -->
+        <section>
+            <h2>Health Tracker</h2>
+            <form id="health-form">
+                <label for="symptom">Symptom:</label>
+                <input type="text" id="symptom" placeholder="e.g., Headache">
+                <label for="food">Food Log:</label>
+                <input type="text" id="food" placeholder="e.g., Salad, 200 kcal">
+                <label for="medication">Medication:</label>
+                <input type="text" id="medication" placeholder="e.g., Aspirin">
+                <label for="diet">Diet Goal:</label>
+                <input type="text" id="diet" placeholder="e.g., Low-carb">
+                <button type="submit">Log Entry</button>
+            </form>
+            <ul id="health-log"></ul>
+        </section>
+
+        <!-- Medication Reminders -->
+        <section>
+            <h2>Medication Reminders</h2>
+            <form id="reminder-form">
+                <label for="med-name">Medication Name:</label>
+                <input type="text" id="med-name" placeholder="e.g., Aspirin">
+                <label for="reminder-time">Reminder Time:</label>
+                <input type="time" id="reminder-time">
+                <button type="submit">Set Reminder</button>
+            </form>
+            <ul id="reminder-list"></ul>
+        </section>
+
+        <!-- Quit Bad Habits -->
+        <section>
+            <h2>Quit Bad Habits</h2>
+            <p>Track progress (e.g., smoke-free days).</p>
+            <button id="habit-btn">Add Day</button>
+            <p>Progress: <span id="habit-progress">0</span> days</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+```
+```css
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    color: #333;
+}
+section {
+    margin: 20px 0;
+}
+.btn {
+    display: inline-block;
+    padding:
